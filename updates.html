@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@500;700&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  
+  <!-- header -->
+
+  <section class="sub-header s-h-updates">
+
+    <nav>
+      <div class="logo">
+      <a href="index.html">
+        <img src="img/logo.png" alt="logo">
+      </a>
+      </div>
+      <div class="nav-links" id="navLinks">
+        <i class="fas fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="mode.html">Режимы</a></li>
+          <li><a href="updates.html">Обновления</a></li>
+        </ul>
+      </div>
+      <i class="fas fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>ОБНОВЛЕНИЯ</h1>
+
+  </section>
+
+  <!-- END header -->
+
+  <!-- facilities -->
+
+  <section class="facilities">
+    
+    <div class="row">
+      <div class="facilities-col">
+        <img src="img/updates-1.jpg" alt="library">
+        <p>29 апреля 2022 г.</p>
+        <h3>Обновление «SH4Y»</h3>
+      </div>
+      <div class="facilities-col">
+        <img src="img/updates-2.png" alt="basketball">
+        <p>26 февраля 2022 г.</p>
+        <h3>Обновление «K1AY»</h3>
+      </div>
+      <div class="facilities-col">
+        <img src="img/updates-3.jpg" alt="cafeteria">
+        <p>3 февраля 2022 г.</p>
+        <h3>Обновление «DESIRE»</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="facilities-col">
+        <img src="img/updates-4.jpg" alt="library">
+        <p>17 декабря 2021 г.</p>
+        <h3>Обновление «sl1degod»</h3>
+      </div>
+      <div class="facilities-col">
+        <img src="img/updates-5.png" alt="basketball">
+        <p>5 декабря 2021 г.</p>
+        <h3>Праздничное обновление</h3>
+      </div>
+      <div class="facilities-col">
+        <img src="img/updates-6.jpg" alt="cafeteria">
+        <p>23 октября 2021 г.</p>
+        <h3>Обновление «jezuzblack»</h3>
+      </div>
+    </div>
+
+    
+  </section>
+
+  <!-- end facilities -->
+
+  <!-- footer -->
+
+  <section class="footer">
+    <div class="icons">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-youtube"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-twitch"></i>
+    </div>
+    <p>© 2022 Epic Games</p>
+  </section>
+
+  <!-- end footer -->
+
+  <script>
+    let navLinks = document.getElementById('navLinks');
+    function showMenu() {
+      navLinks.style.right = '0';
+    }
+    function hideMenu() {
+      navLinks.style.right = '-200px';
+    }
+  </script>
+  <script src="https://kit.fontawesome.com/7860584906.js" crossorigin="anonymous"></script>
+</body>
+</html>

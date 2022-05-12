@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@500;700&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  
+  <!-- header -->
+
+  <section class="sub-header">
+
+    <nav>
+      <div class="logo">
+      <a href="index.html">
+        <img src="img/logo.png" alt="logo">
+      </a>
+      </div>
+      <div class="nav-links" id="navLinks">
+        <i class="fas fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="mode.html">Режимы</a></li>
+          <li><a href="updates.html">Обновления</a></li>
+        </ul>
+      </div>
+      <i class="fas fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>РЕЖИМЫ</h1>
+
+  </section>
+
+
+  <section class="facilities">
+    
+    <div class="row">
+      <div class="facilities-col">
+        <img src="img/maul.jpg" alt="library">
+        <h3>КОРОЛЕВСКАЯ БИТВА</h3>
+        <p>десятки игроков высаживаются на большой территории без оружия и снаряжения. Их задача — найти все, что нужно для боя (предметы каждый раз разбросаны случайно), и остаться последним выжившим в игре.</p>
+      </div>
+      <div class="facilities-col">
+        <img src="img/dooku.jpg" alt="basketball">
+        <h3>ТВОРЧЕСКИЙ РЕЖИМ</h3>
+        <p>позволяет игрокам создавать свои собственные игры и карты, что делает его местом как для веселых, так и для соревновательных тренировок. </p>
+      </div>
+      <div class="facilities-col">
+        <img src="img/grievous.jpg" alt="cafeteria">
+        <h3>СРАЖЕНИЕ С БУРЕЙ</h3>
+        <p>PvE-кампания строительного боевика для совместного прохождения.</p>
+      </div>
+    </div>
+
+  </section>
+
+
+  <section class="footer">
+    <div class="icons">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-youtube"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-twitch"></i>
+    </div>
+    <p>© 2022 Epic Games</p>
+  </section>
+
+  <!-- end footer -->
+
+  <script>
+    let navLinks = document.getElementById('navLinks');
+    function showMenu() {
+      navLinks.style.right = '0';
+    }
+    function hideMenu() {
+      navLinks.style.right = '-200px';
+    }
+  </script>
+  <script src="https://kit.fontawesome.com/7860584906.js" crossorigin="anonymous"></script>
+</body>
+</html>
